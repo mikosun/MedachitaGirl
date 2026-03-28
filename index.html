@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="飲み会や宅のみの会話ネタを提供するサイト">
+    <title>会話ネタジェネレーター - Conversation Starter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🎉 会話ネタジェネレーター</h1>
+            <p class="tagline">飲み会や宅のみで話題に困ったときに！</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main-container">
+            <!-- メインコンテンツエリア -->
+            <div class="topic-display" id="topicDisplay">
+                <p class="hint">ボタンを押して質問をゲット！</p>
+            </div>
+
+            <!-- ボタンセクション -->
+            <div class="button-section">
+                <button class="generate-btn" id="generateBtn">🎲 質問をもらう</button>
+                <button class="retry-btn" id="retryBtn" style="display: none;">別の質問をもらう</button>
+            </div>
+
+            <!-- カテゴリーフィルター -->
+            <div class="category-filter">
+                <label>
+                    <input type="checkbox" name="category" value="deep" checked>
+                    深い話題
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="fun" checked>
+                    楽しい話題
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="icebreaker" checked>
+                    アイスブレイク
+                </label>
+            </div>
+
+            <!-- 履歴セクション -->
+            <div class="history-section">
+                <h3>📝 この会話で出た質問</h3>
+                <div class="history-list" id="historyList">
+                    <p class="empty-message">まだ質問がありません</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 会話ネタジェネレーター. 楽しい会話を！</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
